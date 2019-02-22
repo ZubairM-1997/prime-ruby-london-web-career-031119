@@ -1,9 +1,9 @@
- def is_prime?(num)
-    flag = true
-    for x in 2..num-1
-        if num % x == 0
-            flag = false
-        end
+def prime?(number)
+  if number >= 2
+    (2..number - 1).all? do |x|
+      number % x != 0
     end
-    return flag
+  else
+    return false
+  end
 end
