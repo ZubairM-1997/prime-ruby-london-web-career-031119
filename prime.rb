@@ -1,2 +1,3 @@
-def prime_numbers(num)
+def prime?(num)
+  
   
